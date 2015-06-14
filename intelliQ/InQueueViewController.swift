@@ -41,8 +41,9 @@ class InQueueViewController: UIViewController {
         var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
         self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
         
+        self.title = companyName!
+        
         if let queues = defaults.objectForKey("queues") as? [String:String]{
-            println(queues)
             if let existingWaitingId = queues[companyId!]{
                 waitingId = existingWaitingId
                 checkStatus()
@@ -73,7 +74,6 @@ class InQueueViewController: UIViewController {
         
         qProvider.checkStatus(waitingId!, companyId: companyId!){
             result -> Void in
-            println(result)
             dispatch_async(dispatch_get_main_queue(), {
                 if result["state"] == "ready"{
                     //Its your turn!
@@ -100,7 +100,7 @@ class InQueueViewController: UIViewController {
     
     func waitingFinished(){
         notifyUser()
-        var alert = UIAlertController(title: "Hey!", message: "Its your turn", preferredStyle: UIAlertControllerStyle.Alert)
+        var alert = UIAlertController(title: "\(companyName!)", message: "Its your turn", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { action in
             self.returnToList(UIBarButtonItem())
         }))

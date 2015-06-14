@@ -16,6 +16,8 @@ class QViewController: UITableViewController{
     var selectedCompany:Int?
     var updateTimer:NSTimer?
     
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,7 +33,9 @@ class QViewController: UITableViewController{
         if let destinationVC = segue.destinationViewController as? InQueueViewController {
             destinationVC.companyId = companies[selectedCompany!].id
             destinationVC.companyAvgTime = companies[selectedCompany!].avgWaitingTime
+            destinationVC.companyName = companies[selectedCompany!].name
         }
+        tableView.deselectRowAtIndexPath(NSIndexPath(forRow: selectedCompany!, inSection: 0), animated: true)
         updateTimer?.invalidate()
     }
     
@@ -61,8 +65,40 @@ class QViewController: UITableViewController{
         loadCompanies(true){() -> Void in
         
         }
+        
+        if let queues = defaults.objectForKey("queues") as? [String:String]{
+            println(queues)
+            for (company, waitingId) in queues {
+                checkStatus(waitingId, companyId: company)
+            }
+            
+        }
     }
     
+    func checkStatus(waitingId: String?, companyId: String?){
+        
+        qProvider.checkStatus(waitingId!, companyId: companyId!){
+            result -> Void in
+            println(result)
+            dispatch_async(dispatch_get_main_queue(), {
+                
+                if result["state"] == "ready"{
+                    //Its your turn!
+                    
+                    for (index,company) in enumerate(self.companies) {
+                        if company.id == result["companyId"] {
+                            self.selectedCompany = index
+                            
+                            self.performSegueWithIdentifier("enqueue", sender: self)
+                        }
+                    }
+                    
+                }
+                
+            })
+            
+        }
+    }
     
     func loadCompanies (reset: Bool, callback: () -> Void) {
         if !isLoading {

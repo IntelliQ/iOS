@@ -89,10 +89,10 @@ class QProvider{
                         }
                     }
                     
-                    println(personAhead)
                     
                     status["peopleAhead"] = String(personAhead)
                     status["ticketId"] = String(position)
+                    status["companyId"] = companyId
                     if position == -1{
                         status["state"] = "ready"
                     }
