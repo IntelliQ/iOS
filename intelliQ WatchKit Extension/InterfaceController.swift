@@ -12,8 +12,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    var isLoading = false,
-        qProvider = QProvider()
+//    var isLoading = false,
+//        qProvider = QProvider()
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -33,34 +33,34 @@ class InterfaceController: WKInterfaceController {
     
     func loadTableData(){
         
-        if !isLoading {
-            postProvider.getPosts(offset, limit: limit, sources: sources, sort: sort) { (posts) -> Void in
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.posts.extend(posts)
-                    
-                    //                    var allPosts = 0
-                    //                    for postArray in self.posts {
-                    //                        allPosts += postArray.count
-                    //                    }
-                    
-                    self.tableView.setNumberOfRows(self.posts.count, withRowType: "postItem")
-                    
-                    //                    for postArray in self.posts {
-                    for (index, post) in enumerate(self.posts) {
-                        if let row = self.tableView.rowControllerAtIndex(index) as? postListItem {
-                            row.postTitle.setText(post.title)
-                            row.postContent.setText(post.text)
-                            
-                        }
-                    }
-                    //                    }
-                    
-                    self.offset += self.limit
-                    self.isLoading = false
-                    
-                })
-            }
-        }
+//        if !isLoading {
+//            postProvider.getPosts(offset, limit: limit, sources: sources, sort: sort) { (posts) -> Void in
+//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                    self.posts.extend(posts)
+//                    
+//                    //                    var allPosts = 0
+//                    //                    for postArray in self.posts {
+//                    //                        allPosts += postArray.count
+//                    //                    }
+//                    
+//                    self.tableView.setNumberOfRows(self.posts.count, withRowType: "postItem")
+//                    
+//                    //                    for postArray in self.posts {
+//                    for (index, post) in enumerate(self.posts) {
+//                        if let row = self.tableView.rowControllerAtIndex(index) as? postListItem {
+//                            row.postTitle.setText(post.title)
+//                            row.postContent.setText(post.text)
+//                            
+//                        }
+//                    }
+//                    //                    }
+//                    
+//                    self.offset += self.limit
+//                    self.isLoading = false
+//                    
+//                })
+//            }
+//        }
     }
 
 

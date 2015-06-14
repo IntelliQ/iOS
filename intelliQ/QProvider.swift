@@ -73,10 +73,12 @@ class QProvider{
     //                status["peopleAhead"] = json["ahead"] as! String
     //                status["timeLeft"]  = json["timeLeft"] as! String
                     
-                    var position = -1
+                    var position = -1,
+                        state    = ""
                     for person in persons{
                         if person["id"] as! String == qItemId {
                             position = (person["position__c"] as! String).toInt()!
+                            
                         }
                     }
                     
@@ -91,6 +93,9 @@ class QProvider{
                     
                     status["peopleAhead"] = String(personAhead)
                     status["ticketId"] = String(position)
+                    if position == -1{
+                        status["state"] = "ready"
+                    }
                     
                     callback(status)
                 }else{

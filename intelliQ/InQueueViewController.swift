@@ -16,7 +16,8 @@ class InQueueViewController: UIViewController {
         qProvider = QProvider(),
         waitingId:String?,
         updateTimer:NSTimer?,
-        companyAvgTime:Int?
+        companyAvgTime:Int?,
+        companyName:String?
     
     @IBOutlet weak var minutesLeft: UILabel!
     
@@ -74,13 +75,47 @@ class InQueueViewController: UIViewController {
             result -> Void in
             println(result)
             dispatch_async(dispatch_get_main_queue(), {
-                self.ticketId.text = result["ticketId"]
-                self.inLine.text = result["peopleAhead"]
-                var minutes = self.companyAvgTime! * (result["peopleAhead"])!.toInt()!
-                self.minutesLeft.text = "\(minutes) min"
+                if result["state"] == "ready"{
+                    //Its your turn!
+                    self.waitingFinished()
+                }else {
+                    self.ticketId.text = result["ticketId"]
+                    self.inLine.text = result["peopleAhead"]
+                    var minutes = self.companyAvgTime! * (result["peopleAhead"])!.toInt()!
+                    self.minutesLeft.text = "\(minutes) min"
+                }
+                
             })
 
         }
+    }
+    
+    func notifyUser(){
+        var localNotification: UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "\(companyName)"
+        localNotification.alertBody = "It's your turn"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 3)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+    }
+    
+    func waitingFinished(){
+        notifyUser()
+        var alert = UIAlertController(title: "Hey!", message: "Its your turn", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { action in
+            self.returnToList(UIBarButtonItem())
+        }))
+            
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+        if let queues = defaults.objectForKey("queues") as? [String:String]{
+            var newQueues = queues
+            
+            newQueues.removeValueForKey(companyId!)
+            defaults.setObject(newQueues, forKey: "queues")
+        }
+        
+        qProvider.cancelWaiting(waitingId!)
+        updateTimer!.invalidate()
     }
     
     
