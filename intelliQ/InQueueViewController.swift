@@ -10,7 +10,8 @@ import UIKit
 
 class InQueueViewController: UIViewController {
 
-    let defaults = NSUserDefaults.standardUserDefaults()
+//    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = NSUserDefaults(suiteName: "group.me.intelliQ")!
     
     var companyId:String?,
         qProvider = QProvider(),
@@ -92,9 +93,9 @@ class InQueueViewController: UIViewController {
     
     func notifyUser(){
         var localNotification: UILocalNotification = UILocalNotification()
-        localNotification.alertAction = "\(companyName)"
+        localNotification.alertAction = "\(companyName!)"
         localNotification.alertBody = "It's your turn"
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 3)
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     

@@ -8,9 +8,11 @@
 
 import WatchKit
 
-class postListItem: NSObject {
+class queueListItem: NSObject {
     
-    @IBOutlet weak var postTitle: WKInterfaceLabel!
-    @IBOutlet weak var postContent: WKInterfaceLabel!
+    
+    @IBOutlet weak var companyName: WKInterfaceLabel!
+    @IBOutlet weak var personsAhead: WKInterfaceLabel!
+    
     
 }

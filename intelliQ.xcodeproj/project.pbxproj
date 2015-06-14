@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		286FB91B1B2D8B5600437B8C /* http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91A1B2D8B5600437B8C /* http.swift */; };
+		286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91C1B2D8B6C00437B8C /* QProvider.swift */; };
+		286FB91F1B2D8BB100437B8C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91E1B2D8BB100437B8C /* Company.swift */; };
 		28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BA91B2B6B560032E598 /* AppDelegate.swift */; };
 		28938BAC1B2B6B560032E598 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BAB1B2B6B560032E598 /* QViewController.swift */; };
 		28938BAF1B2B6B560032E598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28938BAD1B2B6B560032E598 /* Main.storyboard */; };
@@ -68,6 +71,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		286FB91A1B2D8B5600437B8C /* http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = http.swift; sourceTree = "<group>"; };
+		286FB91C1B2D8B6C00437B8C /* QProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QProvider.swift; sourceTree = "<group>"; };
+		286FB91E1B2D8BB100437B8C /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		286FB9201B2D91C500437B8C /* intelliQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = intelliQ.entitlements; sourceTree = "<group>"; };
 		28938BA41B2B6B560032E598 /* intelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28938BA81B2B6B560032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28938BA91B2B6B560032E598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +154,7 @@
 		28938BA61B2B6B560032E598 /* intelliQ */ = {
 			isa = PBXGroup;
 			children = (
+				286FB9201B2D91C500437B8C /* intelliQ.entitlements */,
 				28938BC91B2C651D0032E598 /* http.swift */,
 				28938BA91B2B6B560032E598 /* AppDelegate.swift */,
 				28938BAB1B2B6B560032E598 /* QViewController.swift */,
@@ -196,6 +204,9 @@
 				28938BE21B2CF3EA0032E598 /* Images.xcassets */,
 				28938BDB1B2CF3EA0032E598 /* Supporting Files */,
 				28938BFC1B2D84650032E598 /* queueListItem.swift */,
+				286FB91A1B2D8B5600437B8C /* http.swift */,
+				286FB91C1B2D8B6C00437B8C /* QProvider.swift */,
+				286FB91E1B2D8BB100437B8C /* Company.swift */,
 			);
 			path = "intelliQ WatchKit Extension";
 			sourceTree = "<group>";
@@ -311,6 +322,12 @@
 				TargetAttributes = {
 					28938BA31B2B6B560032E598 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = B87Z3H6AA8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					28938BB81B2B6B560032E598 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -412,8 +429,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28938BFD1B2D84650032E598 /* queueListItem.swift in Sources */,
+				286FB91B1B2D8B5600437B8C /* http.swift in Sources */,
 				28938BE11B2CF3EA0032E598 /* NotificationController.swift in Sources */,
 				28938BDF1B2CF3EA0032E598 /* InterfaceController.swift in Sources */,
+				286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */,
+				286FB91F1B2D8BB100437B8C /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,9 +572,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = intelliQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -562,9 +585,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = intelliQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -695,6 +721,7 @@
 				28938BF71B2CF3EB0032E598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28938BF81B2CF3EB0032E598 /* Build configuration list for PBXNativeTarget "intelliQ WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -703,6 +730,7 @@
 				28938BFA1B2CF3EB0032E598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

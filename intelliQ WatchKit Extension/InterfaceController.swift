@@ -12,16 +12,20 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-//    var isLoading = false,
-//        qProvider = QProvider()
+    var isLoading = false,
+        qProvider = QProvider(),
+        companies:[Company] = [],
+        updateTimer:NSTimer?
     
-    var queues = ["1", "2", "3"]
     
-    @IBOutlet weak var tableView: WKInterfaceGroup!
+    @IBOutlet weak var tableView: WKInterfaceTable!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        updateTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: "loadTableData", userInfo: nil, repeats: true)
+        loadTableData()
     }
 
     override func willActivate() {
@@ -32,48 +36,31 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        updateTimer?.invalidate()
     }
     
     func loadTableData(){
         
-//        if !isLoading {
-//            postProvider.getPosts(offset, limit: limit, sources: sources, sort: sort) { (posts) -> Void in
-//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//                    self.posts.extend(posts)
-//                    
-//                    //                    var allPosts = 0
-//                    //                    for postArray in self.posts {
-//                    //                        allPosts += postArray.count
-//                    //                    }
-//                    
-//                    self.tableView.setNumberOfRows(self.posts.count, withRowType: "postItem")
-//                    
-//                    //                    for postArray in self.posts {
-//                    for (index, post) in enumerate(self.posts) {
-//                        if let row = self.tableView.rowControllerAtIndex(index) as? postListItem {
-//                            row.postTitle.setText(post.title)
-//                            row.postContent.setText(post.text)
-//                            
-//                        }
-//                    }
-//                    //                    }
-//                    
-//                    self.offset += self.limit
-//                    self.isLoading = false
-//                    
-//                })
-//            }
-//        }
-        
-        
-        self.tableView.setNumberOfRows(self.posts.count, withRowType: "postItem")
-        
-                            for (index, queue) in enumerate(self.queues) {
-                                if let row = self.tableView.rowControllerAtIndex(index) as? postListItem {
-                                    row.postTitle.setText(post.title)
-                                    row.postContent.setText(post.text)
-        
-                            }
+        if !isLoading {
+            qProvider.getCompanies(){ (companies) -> Void in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.companies = companies
+                    
+                    self.tableView.setNumberOfRows(self.companies.count, withRowType: "queueListItem")
+                    
+                    for (index, company) in enumerate(self.companies) {
+                        if let row = self.tableView.rowControllerAtIndex(index) as? queueListItem {
+                            row.companyName.setText(company.name!)
+                            row.personsAhead.setText("\(company.waiting!) persons waiting")
+                            
+                        }
+                    }
+                    
+                    self.isLoading = false
+                    
+                })
+            }
+        }
         
     }
 

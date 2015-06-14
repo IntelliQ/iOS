@@ -16,7 +16,8 @@ class QViewController: UITableViewController{
     var selectedCompany:Int?
     var updateTimer:NSTimer?
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+//    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = NSUserDefaults(suiteName: "group.me.intelliQ")!
     
     override func viewDidLoad() {
         super.viewDidLoad()

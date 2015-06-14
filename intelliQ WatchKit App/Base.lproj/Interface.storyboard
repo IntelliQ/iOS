@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pvz-EK-2n2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Glance Interface Controller-->
-        <scene sceneID="VFb-xh-2Ap">
+        <!--Interface Controller-->
+        <scene sceneID="re2-ZI-zdi">
             <objects>
-                <glanceController id="y5l-qw-LLI" customClass="InterfaceController" customModule="intelliQ_WatchKit_Extension">
+                <controller id="Pvz-EK-2n2" customClass="InterfaceController" customModule="intelliQ_WatchKit_Extension">
                     <items>
-                        <group alignment="left" id="PNg-2H-IgO"/>
-                        <group alignment="left" id="bxd-gV-zvd">
+                        <label alignment="center" text="Companies" textAlignment="center" id="VPL-Oc-B28"/>
+                        <separator alignment="left" id="gWK-O7-2Fw">
+                            <color key="color" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="13" alignment="left" id="j82-Uj-KYd"/>
+                        <table alignment="left" id="DPT-WG-RHS">
                             <items>
-                                <table alignment="left" id="660-lC-7TZ">
-                                    <items>
-                                        <tableRow id="xor-lv-M2t">
-                                            <group key="rootItem" width="1" alignment="left" id="Sjc-Dr-L3h">
-                                                <items>
-                                                    <label alignment="left" text="Label" id="DzT-JV-gCB"/>
-                                                </items>
-                                            </group>
-                                        </tableRow>
-                                    </items>
-                                </table>
+                                <tableRow identifier="queueListItem" id="0F6-mh-YCn" customClass="queueListItem" customModule="intelliQ_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="EFR-2O-hv1">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="jPl-Wa-krC">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <separator alignment="left" id="AOY-Ha-w4A">
+                                                <color key="color" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <label alignment="left" text="Label" id="ZdZ-MD-con">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <group width="1" height="4" alignment="left" id="FGv-Ld-tOv"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="companyName" destination="jPl-Wa-krC" id="1ta-I3-42r"/>
+                                        <outlet property="personsAhead" destination="ZdZ-MD-con" id="vkV-Ze-kHh"/>
+                                    </connections>
+                                </tableRow>
                             </items>
-                        </group>
+                        </table>
                     </items>
                     <connections>
-                        <outlet property="tableView" destination="Sjc-Dr-L3h" id="Do9-ZC-EVT"/>
+                        <outlet property="tableView" destination="DPT-WG-RHS" id="rbS-5g-qzm"/>
                     </connections>
-                </glanceController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="122"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="intelliQ_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="371"/>
+            <point key="canvasLocation" x="224" y="386"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
