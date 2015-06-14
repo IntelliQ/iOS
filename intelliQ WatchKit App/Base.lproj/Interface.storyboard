@@ -27,6 +27,9 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="tableView" destination="Sjc-Dr-L3h" id="Do9-ZC-EVT"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="220" y="122"/>

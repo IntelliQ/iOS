@@ -15,6 +15,9 @@ class InterfaceController: WKInterfaceController {
 //    var isLoading = false,
 //        qProvider = QProvider()
     
+    var queues = ["1", "2", "3"]
+    
+    @IBOutlet weak var tableView: WKInterfaceGroup!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -61,6 +64,17 @@ class InterfaceController: WKInterfaceController {
 //                })
 //            }
 //        }
+        
+        
+        self.tableView.setNumberOfRows(self.posts.count, withRowType: "postItem")
+        
+                            for (index, queue) in enumerate(self.queues) {
+                                if let row = self.tableView.rowControllerAtIndex(index) as? postListItem {
+                                    row.postTitle.setText(post.title)
+                                    row.postContent.setText(post.text)
+        
+                            }
+        
     }
 
 
