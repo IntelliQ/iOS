@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		286FB91B1B2D8B5600437B8C /* http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91A1B2D8B5600437B8C /* http.swift */; };
 		286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91C1B2D8B6C00437B8C /* QProvider.swift */; };
-		286FB91F1B2D8BB100437B8C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91E1B2D8BB100437B8C /* Company.swift */; };
 		28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BA91B2B6B560032E598 /* AppDelegate.swift */; };
 		28938BAC1B2B6B560032E598 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BAB1B2B6B560032E598 /* QViewController.swift */; };
 		28938BAF1B2B6B560032E598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28938BAD1B2B6B560032E598 /* Main.storyboard */; };
@@ -30,6 +29,7 @@
 		28938BF11B2CF3EB0032E598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28938BF01B2CF3EB0032E598 /* Images.xcassets */; };
 		28938BF41B2CF3EB0032E598 /* intelliQ WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28938BD91B2CF3EA0032E598 /* intelliQ WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		28938BFD1B2D84650032E598 /* queueListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BFC1B2D84650032E598 /* queueListItem.swift */; };
+		28EDA4011B2DAB4F009AE957 /* company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EDA4001B2DAB4F009AE957 /* company.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,6 @@
 /* Begin PBXFileReference section */
 		286FB91A1B2D8B5600437B8C /* http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = http.swift; sourceTree = "<group>"; };
 		286FB91C1B2D8B6C00437B8C /* QProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QProvider.swift; sourceTree = "<group>"; };
-		286FB91E1B2D8BB100437B8C /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		286FB9201B2D91C500437B8C /* intelliQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = intelliQ.entitlements; sourceTree = "<group>"; };
 		28938BA41B2B6B560032E598 /* intelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28938BA81B2B6B560032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		28938BEE1B2CF3EA0032E598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		28938BF01B2CF3EB0032E598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28938BFC1B2D84650032E598 /* queueListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queueListItem.swift; sourceTree = "<group>"; };
+		28EDA4001B2DAB4F009AE957 /* company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = company.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +206,7 @@
 				28938BFC1B2D84650032E598 /* queueListItem.swift */,
 				286FB91A1B2D8B5600437B8C /* http.swift */,
 				286FB91C1B2D8B6C00437B8C /* QProvider.swift */,
-				286FB91E1B2D8BB100437B8C /* Company.swift */,
+				28EDA4001B2DAB4F009AE957 /* company.swift */,
 			);
 			path = "intelliQ WatchKit Extension";
 			sourceTree = "<group>";
@@ -431,9 +431,9 @@
 				28938BFD1B2D84650032E598 /* queueListItem.swift in Sources */,
 				286FB91B1B2D8B5600437B8C /* http.swift in Sources */,
 				28938BE11B2CF3EA0032E598 /* NotificationController.swift in Sources */,
+				28EDA4011B2DAB4F009AE957 /* company.swift in Sources */,
 				28938BDF1B2CF3EA0032E598 /* InterfaceController.swift in Sources */,
 				286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */,
-				286FB91F1B2D8BB100437B8C /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
