@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		286FB91B1B2D8B5600437B8C /* http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91A1B2D8B5600437B8C /* http.swift */; };
 		286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91C1B2D8B6C00437B8C /* QProvider.swift */; };
+		287E89781B3F36ED006C74E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E89771B3F36ED006C74E4 /* SettingsViewController.swift */; };
 		28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BA91B2B6B560032E598 /* AppDelegate.swift */; };
 		28938BAC1B2B6B560032E598 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BAB1B2B6B560032E598 /* QViewController.swift */; };
 		28938BAF1B2B6B560032E598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28938BAD1B2B6B560032E598 /* Main.storyboard */; };
@@ -73,7 +74,7 @@
 /* Begin PBXFileReference section */
 		286FB91A1B2D8B5600437B8C /* http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = http.swift; sourceTree = "<group>"; };
 		286FB91C1B2D8B6C00437B8C /* QProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QProvider.swift; sourceTree = "<group>"; };
-		286FB9201B2D91C500437B8C /* intelliQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = intelliQ.entitlements; sourceTree = "<group>"; };
+		287E89771B3F36ED006C74E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		28938BA41B2B6B560032E598 /* intelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28938BA81B2B6B560032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28938BA91B2B6B560032E598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +155,6 @@
 		28938BA61B2B6B560032E598 /* intelliQ */ = {
 			isa = PBXGroup;
 			children = (
-				286FB9201B2D91C500437B8C /* intelliQ.entitlements */,
 				28938BC91B2C651D0032E598 /* http.swift */,
 				28938BA91B2B6B560032E598 /* AppDelegate.swift */,
 				28938BAB1B2B6B560032E598 /* QViewController.swift */,
@@ -167,6 +167,7 @@
 				28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */,
 				28938BD11B2C88730032E598 /* InQueueViewController.swift */,
 				28938BD31B2CC1D40032E598 /* Ticket.swift */,
+				287E89771B3F36ED006C74E4 /* SettingsViewController.swift */,
 			);
 			path = intelliQ;
 			sourceTree = "<group>";
@@ -322,7 +323,7 @@
 				TargetAttributes = {
 					28938BA31B2B6B560032E598 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = B87Z3H6AA8;
+						DevelopmentTeam = HVUXQK6AQ7;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -335,9 +336,11 @@
 					};
 					28938BD81B2CF3EA0032E598 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = HVUXQK6AQ7;
 					};
 					28938BE51B2CF3EA0032E598 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = HVUXQK6AQ7;
 					};
 				};
 			};
@@ -413,6 +416,7 @@
 				28938BCC1B2C6AD50032E598 /* QProvider.swift in Sources */,
 				28938BCA1B2C651D0032E598 /* http.swift in Sources */,
 				28938BCE1B2C6D370032E598 /* company.swift in Sources */,
+				287E89781B3F36ED006C74E4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -650,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = intelliQ_WatchKit_Extension;
 				INFOPLIST_FILE = "intelliQ WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -663,6 +669,7 @@
 		28938BF91B2CF3EB0032E598 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -677,6 +684,7 @@
 		28938BFA1B2CF3EB0032E598 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "intelliQ WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";

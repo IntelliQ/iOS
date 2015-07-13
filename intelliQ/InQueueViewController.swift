@@ -63,7 +63,11 @@ class InQueueViewController: UIViewController {
         scrollView.contentSize = CGSize(width: contentView.frame.width, height: height)
     }
     func enqueue(){
-        qProvider.enqueMe("Markus", company: companyId!){
+        var nickname = "Anonymus"
+        if let name = defaults.objectForKey("username") as? String{
+            nickname = name
+        }
+        qProvider.enqueMe(nickname, company: companyId!){
             newId -> Void in
             self.waitingId = newId
             self.storeQueue()

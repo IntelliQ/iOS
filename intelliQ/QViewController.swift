@@ -23,6 +23,18 @@ class QViewController: UITableViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        if defaults.objectForKey("username") == nil{
+            self.performSegueWithIdentifier("settings", sender: self)
+        }
+        
+        var label = UILabel(frame: CGRectMake(0, 0, tableView.bounds.size.width, self.tableView.bounds.size.height))
+        label.center = CGPointMake(160, 284)
+        label.textAlignment = NSTextAlignment.Center
+        label.text = ""
+        label.sizeToFit()
+        
+        tableView.backgroundView = label
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -36,7 +48,9 @@ class QViewController: UITableViewController{
             destinationVC.companyAvgTime = companies[selectedCompany!].avgWaitingTime
             destinationVC.companyName = companies[selectedCompany!].name
         }
-        tableView.deselectRowAtIndexPath(NSIndexPath(forRow: selectedCompany!, inSection: 0), animated: true)
+        if selectedCompany != nil{
+            tableView.deselectRowAtIndexPath(NSIndexPath(forRow: selectedCompany!, inSection: 0), animated: true)
+        }        
         updateTimer?.invalidate()
     }
     
@@ -107,6 +121,11 @@ class QViewController: UITableViewController{
             qProvider.getCompanies() { (companies) -> Void in
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.companies = companies
+                    if companies.count == 0 {
+                        (self.tableView.backgroundView as! UILabel).text = "Sorry, no places around..."
+                    }else{
+                        (self.tableView.backgroundView as! UILabel).text = ""
+                    }
                     self.tableView.reloadData()
                     self.isLoading = false
                     callback()
