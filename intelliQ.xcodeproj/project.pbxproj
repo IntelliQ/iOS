@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		286FB91B1B2D8B5600437B8C /* http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91A1B2D8B5600437B8C /* http.swift */; };
-		286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FB91C1B2D8B6C00437B8C /* QProvider.swift */; };
 		287E89781B3F36ED006C74E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E89771B3F36ED006C74E4 /* SettingsViewController.swift */; };
 		28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BA91B2B6B560032E598 /* AppDelegate.swift */; };
 		28938BAC1B2B6B560032E598 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BAB1B2B6B560032E598 /* QViewController.swift */; };
@@ -22,15 +20,6 @@
 		28938BD01B2C72FB0032E598 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */; };
 		28938BD21B2C88730032E598 /* InQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BD11B2C88730032E598 /* InQueueViewController.swift */; };
 		28938BD41B2CC1D40032E598 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BD31B2CC1D40032E598 /* Ticket.swift */; };
-		28938BDF1B2CF3EA0032E598 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BDE1B2CF3EA0032E598 /* InterfaceController.swift */; };
-		28938BE11B2CF3EA0032E598 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BE01B2CF3EA0032E598 /* NotificationController.swift */; };
-		28938BE31B2CF3EA0032E598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28938BE21B2CF3EA0032E598 /* Images.xcassets */; };
-		28938BE71B2CF3EA0032E598 /* intelliQ WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 28938BE61B2CF3EA0032E598 /* intelliQ WatchKit App.app */; };
-		28938BEF1B2CF3EA0032E598 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28938BED1B2CF3EA0032E598 /* Interface.storyboard */; };
-		28938BF11B2CF3EB0032E598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28938BF01B2CF3EB0032E598 /* Images.xcassets */; };
-		28938BF41B2CF3EB0032E598 /* intelliQ WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28938BD91B2CF3EA0032E598 /* intelliQ WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		28938BFD1B2D84650032E598 /* queueListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BFC1B2D84650032E598 /* queueListItem.swift */; };
-		28EDA4011B2DAB4F009AE957 /* company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EDA4001B2DAB4F009AE957 /* company.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,39 +30,9 @@
 			remoteGlobalIDString = 28938BA31B2B6B560032E598;
 			remoteInfo = intelliQ;
 		};
-		28938BE81B2CF3EA0032E598 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28938B9C1B2B6B560032E598 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28938BE51B2CF3EA0032E598;
-			remoteInfo = "intelliQ WatchKit App";
-		};
-		28938BF21B2CF3EB0032E598 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28938B9C1B2B6B560032E598 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28938BD81B2CF3EA0032E598;
-			remoteInfo = "intelliQ WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		28938BFB1B2CF3EB0032E598 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				28938BF41B2CF3EB0032E598 /* intelliQ WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		286FB91A1B2D8B5600437B8C /* http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = http.swift; sourceTree = "<group>"; };
-		286FB91C1B2D8B6C00437B8C /* QProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QProvider.swift; sourceTree = "<group>"; };
 		287E89771B3F36ED006C74E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		28938BA41B2B6B560032E598 /* intelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28938BA81B2B6B560032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,18 +50,6 @@
 		28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		28938BD11B2C88730032E598 /* InQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InQueueViewController.swift; sourceTree = "<group>"; };
 		28938BD31B2CC1D40032E598 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
-		28938BD91B2CF3EA0032E598 /* intelliQ WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "intelliQ WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28938BDC1B2CF3EA0032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28938BDD1B2CF3EA0032E598 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		28938BDE1B2CF3EA0032E598 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		28938BE01B2CF3EA0032E598 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		28938BE21B2CF3EA0032E598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		28938BE61B2CF3EA0032E598 /* intelliQ WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intelliQ WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28938BEC1B2CF3EA0032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28938BEE1B2CF3EA0032E598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		28938BF01B2CF3EB0032E598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		28938BFC1B2D84650032E598 /* queueListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queueListItem.swift; sourceTree = "<group>"; };
-		28EDA4001B2DAB4F009AE957 /* company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = company.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28938BD61B2CF3EA0032E598 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -135,8 +75,6 @@
 			children = (
 				28938BA61B2B6B560032E598 /* intelliQ */,
 				28938BBC1B2B6B560032E598 /* intelliQTests */,
-				28938BDA1B2CF3EA0032E598 /* intelliQ WatchKit Extension */,
-				28938BEA1B2CF3EA0032E598 /* intelliQ WatchKit App */,
 				28938BA51B2B6B560032E598 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,8 +84,6 @@
 			children = (
 				28938BA41B2B6B560032E598 /* intelliQ.app */,
 				28938BB91B2B6B560032E598 /* intelliQTests.xctest */,
-				28938BD91B2CF3EA0032E598 /* intelliQ WatchKit Extension.appex */,
-				28938BE61B2CF3EA0032E598 /* intelliQ WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,48 +133,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		28938BDA1B2CF3EA0032E598 /* intelliQ WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				28938BDE1B2CF3EA0032E598 /* InterfaceController.swift */,
-				28938BE01B2CF3EA0032E598 /* NotificationController.swift */,
-				28938BE21B2CF3EA0032E598 /* Images.xcassets */,
-				28938BDB1B2CF3EA0032E598 /* Supporting Files */,
-				28938BFC1B2D84650032E598 /* queueListItem.swift */,
-				286FB91A1B2D8B5600437B8C /* http.swift */,
-				286FB91C1B2D8B6C00437B8C /* QProvider.swift */,
-				28EDA4001B2DAB4F009AE957 /* company.swift */,
-			);
-			path = "intelliQ WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		28938BDB1B2CF3EA0032E598 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				28938BDC1B2CF3EA0032E598 /* Info.plist */,
-				28938BDD1B2CF3EA0032E598 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		28938BEA1B2CF3EA0032E598 /* intelliQ WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				28938BED1B2CF3EA0032E598 /* Interface.storyboard */,
-				28938BF01B2CF3EB0032E598 /* Images.xcassets */,
-				28938BEB1B2CF3EA0032E598 /* Supporting Files */,
-			);
-			path = "intelliQ WatchKit App";
-			sourceTree = "<group>";
-		};
-		28938BEB1B2CF3EA0032E598 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				28938BEC1B2CF3EA0032E598 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,12 +143,10 @@
 				28938BA01B2B6B560032E598 /* Sources */,
 				28938BA11B2B6B560032E598 /* Frameworks */,
 				28938BA21B2B6B560032E598 /* Resources */,
-				28938BFB1B2CF3EB0032E598 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				28938BF31B2CF3EB0032E598 /* PBXTargetDependency */,
 			);
 			name = intelliQ;
 			productName = intelliQ;
@@ -279,39 +171,6 @@
 			productReference = 28938BB91B2B6B560032E598 /* intelliQTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28938BD81B2CF3EA0032E598 /* intelliQ WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28938BF81B2CF3EB0032E598 /* Build configuration list for PBXNativeTarget "intelliQ WatchKit Extension" */;
-			buildPhases = (
-				28938BD51B2CF3EA0032E598 /* Sources */,
-				28938BD61B2CF3EA0032E598 /* Frameworks */,
-				28938BD71B2CF3EA0032E598 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				28938BE91B2CF3EA0032E598 /* PBXTargetDependency */,
-			);
-			name = "intelliQ WatchKit Extension";
-			productName = "intelliQ WatchKit Extension";
-			productReference = 28938BD91B2CF3EA0032E598 /* intelliQ WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		28938BE51B2CF3EA0032E598 /* intelliQ WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28938BF51B2CF3EB0032E598 /* Build configuration list for PBXNativeTarget "intelliQ WatchKit App" */;
-			buildPhases = (
-				28938BE41B2CF3EA0032E598 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "intelliQ WatchKit App";
-			productName = "intelliQ WatchKit App";
-			productReference = 28938BE61B2CF3EA0032E598 /* intelliQ WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -334,14 +193,6 @@
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 28938BA31B2B6B560032E598;
 					};
-					28938BD81B2CF3EA0032E598 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = HVUXQK6AQ7;
-					};
-					28938BE51B2CF3EA0032E598 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = HVUXQK6AQ7;
-					};
 				};
 			};
 			buildConfigurationList = 28938B9F1B2B6B560032E598 /* Build configuration list for PBXProject "intelliQ" */;
@@ -359,8 +210,6 @@
 			targets = (
 				28938BA31B2B6B560032E598 /* intelliQ */,
 				28938BB81B2B6B560032E598 /* intelliQTests */,
-				28938BD81B2CF3EA0032E598 /* intelliQ WatchKit Extension */,
-				28938BE51B2CF3EA0032E598 /* intelliQ WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -380,24 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28938BD71B2CF3EA0032E598 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28938BE71B2CF3EA0032E598 /* intelliQ WatchKit App.app in Resources */,
-				28938BE31B2CF3EA0032E598 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28938BE41B2CF3EA0032E598 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28938BEF1B2CF3EA0032E598 /* Interface.storyboard in Resources */,
-				28938BF11B2CF3EB0032E598 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,19 +259,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28938BD51B2CF3EA0032E598 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28938BFD1B2D84650032E598 /* queueListItem.swift in Sources */,
-				286FB91B1B2D8B5600437B8C /* http.swift in Sources */,
-				28938BE11B2CF3EA0032E598 /* NotificationController.swift in Sources */,
-				28EDA4011B2DAB4F009AE957 /* company.swift in Sources */,
-				28938BDF1B2CF3EA0032E598 /* InterfaceController.swift in Sources */,
-				286FB91D1B2D8B6C00437B8C /* QProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -448,16 +266,6 @@
 			isa = PBXTargetDependency;
 			target = 28938BA31B2B6B560032E598 /* intelliQ */;
 			targetProxy = 28938BBA1B2B6B560032E598 /* PBXContainerItemProxy */;
-		};
-		28938BE91B2CF3EA0032E598 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28938BE51B2CF3EA0032E598 /* intelliQ WatchKit App */;
-			targetProxy = 28938BE81B2CF3EA0032E598 /* PBXContainerItemProxy */;
-		};
-		28938BF31B2CF3EB0032E598 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28938BD81B2CF3EA0032E598 /* intelliQ WatchKit Extension */;
-			targetProxy = 28938BF21B2CF3EB0032E598 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -476,14 +284,6 @@
 				28938BB31B2B6B560032E598 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		28938BED1B2CF3EA0032E598 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28938BEE1B2CF3EA0032E598 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -632,66 +432,6 @@
 			};
 			name = Release;
 		};
-		28938BF61B2CF3EB0032E598 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = intelliQ_WatchKit_Extension;
-				INFOPLIST_FILE = "intelliQ WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		28938BF71B2CF3EB0032E598 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IBSC_MODULE = intelliQ_WatchKit_Extension;
-				INFOPLIST_FILE = "intelliQ WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
-		28938BF91B2CF3EB0032E598 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "intelliQ WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		28938BFA1B2CF3EB0032E598 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "intelliQ WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -718,24 +458,6 @@
 			buildConfigurations = (
 				28938BC71B2B6B560032E598 /* Debug */,
 				28938BC81B2B6B560032E598 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28938BF51B2CF3EB0032E598 /* Build configuration list for PBXNativeTarget "intelliQ WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28938BF61B2CF3EB0032E598 /* Debug */,
-				28938BF71B2CF3EB0032E598 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28938BF81B2CF3EB0032E598 /* Build configuration list for PBXNativeTarget "intelliQ WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28938BF91B2CF3EB0032E598 /* Debug */,
-				28938BFA1B2CF3EB0032E598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
