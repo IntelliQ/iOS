@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D1CBF86A-76FE-42A6-80C4-E91148B0BC15</string>
 	<key>IDESourceControlProjectName</key>
-	<string>intelliQ</string>
+	<string>IntelliQ</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>69D244BFA35F1468971FC8F56CE463F670F0A1AF</key>
 		<string>https://github.com/IntelliQ/iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>intelliQ.xcodeproj</string>
+	<string>IntelliQ.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>69D244BFA35F1468971FC8F56CE463F670F0A1AF</key>

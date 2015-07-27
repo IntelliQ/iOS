@@ -12,7 +12,7 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     let defaults = NSUserDefaults(suiteName: "group.me.intelliQ")!
-    var nickname = "Anonymus"
+    var nickname = "Anonymous"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class SettingsViewController: UIViewController {
             defaults.setObject(username.text, forKey: "username")
         }else{
             //Set Anonymus as username
-            defaults.setObject("Anonymus", forKey: "username")
+            defaults.setObject("Anonymous", forKey: "username")
         }
         self.dismissViewControllerAnimated(true, completion: nil)
     }

@@ -11,17 +11,24 @@
             <rect key="frame" x="0.0" y="0.0" width="481" height="705"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_carl" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-ZN-K91">
-                    <rect key="frame" x="29" y="240" width="424" height="226"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_carl" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-ZN-K91">
+                    <rect key="frame" x="20" y="236" width="441" height="234"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="400" id="4Wf-Bz-64S"/>
                         <constraint firstAttribute="width" secondItem="dsZ-ZN-K91" secondAttribute="height" multiplier="111:59" id="gX6-gg-bci"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4Wf-Bz-64S"/>
+                        </mask>
+                    </variation>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="dsZ-ZN-K91" secondAttribute="trailing" constant="20" symbolic="YES" id="BLH-Yn-YVc"/>
                 <constraint firstAttribute="centerY" secondItem="dsZ-ZN-K91" secondAttribute="centerY" constant="-0.5" id="D1u-c7-2QE"/>
+                <constraint firstItem="dsZ-ZN-K91" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="R3i-bS-zG7"/>
                 <constraint firstAttribute="centerX" secondItem="dsZ-ZN-K91" secondAttribute="centerX" constant="0.5" id="uWM-Eo-RuL"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28938BA31B2B6B560032E598"
-               BuildableName = "intelliQ.app"
-               BlueprintName = "intelliQ"
-               ReferencedContainer = "container:intelliQ.xcodeproj">
+               BuildableName = "IntelliQ.app"
+               BlueprintName = "IntelliQ"
+               ReferencedContainer = "container:IntelliQ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "28938BB81B2B6B560032E598"
                BuildableName = "intelliQTests.xctest"
                BlueprintName = "intelliQTests"
-               ReferencedContainer = "container:intelliQ.xcodeproj">
+               ReferencedContainer = "container:IntelliQ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "28938BB81B2B6B560032E598"
                BuildableName = "intelliQTests.xctest"
                BlueprintName = "intelliQTests"
-               ReferencedContainer = "container:intelliQ.xcodeproj">
+               ReferencedContainer = "container:IntelliQ.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28938BA31B2B6B560032E598"
-            BuildableName = "intelliQ.app"
-            BlueprintName = "intelliQ"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            BuildableName = "IntelliQ.app"
+            BlueprintName = "IntelliQ"
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28938BA31B2B6B560032E598"
-            BuildableName = "intelliQ.app"
-            BlueprintName = "intelliQ"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            BuildableName = "IntelliQ.app"
+            BlueprintName = "IntelliQ"
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28938BA31B2B6B560032E598"
-            BuildableName = "intelliQ.app"
-            BlueprintName = "intelliQ"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            BuildableName = "IntelliQ.app"
+            BlueprintName = "IntelliQ"
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

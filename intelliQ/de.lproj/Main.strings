@@ -1,0 +1,45 @@
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "3mE-Do-ye8"; */
+"3mE-Do-ye8.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "These people are already in line and will get served before you."; ObjectID = "8XC-vx-IZp"; */
+"8XC-vx-IZp.text" = "Diese Personen stehen bereits an und werden vor dir dran sein.";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "A6g-yo-XXi"; */
+"A6g-yo-XXi.text" = "-";
+
+/* Class = "UINavigationItem"; title = "IntelliQ"; ObjectID = "LQb-WL-Kht"; */
+"LQb-WL-Kht.title" = "IntelliQ";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Lhl-is-Ugu"; */
+"Lhl-is-Ugu.text" = "-";
+
+/* Class = "UILabel"; text = "This is your ticket ID, we'll let you know when it's time for you to show up."; ObjectID = "LlB-54-hbc"; */
+"LlB-54-hbc.text" = "Das ist deine Ticket-Nr. Wir informieren dich, wenn du dran bist.";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "M7M-Od-1a1"; */
+"M7M-Od-1a1.text" = "-";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ODI-Ke-YB8"; */
+"ODI-Ke-YB8.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "Oc1-eV-VJh"; */
+"Oc1-eV-VJh.placeholder" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Leave Queue"; ObjectID = "QYg-HB-YNS"; */
+"QYg-HB-YNS.normalTitle" = "Warteschlange verlassen";
+
+/* Class = "UILabel"; text = "people in queue"; ObjectID = "erJ-WO-PNF"; */
+"erJ-WO-PNF.text" = "Personen stehen an";
+
+/* Class = "UILabel"; text = "This is an estimation of how long you have to wait. Make sure that you are back on time."; ObjectID = "mqq-VG-hOL"; */
+"mqq-VG-hOL.text" = "Das ist eine Abschätzung der Wartezeit. Sei rechtzeitig wieder da.";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "o6e-6S-HmD"; */
+"o6e-6S-HmD.text" = "5";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pWF-g1-eKS"; */
+"pWF-g1-eKS.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "sdb-1m-e2u"; */
+"sdb-1m-e2u.title" = "Einstellungen";

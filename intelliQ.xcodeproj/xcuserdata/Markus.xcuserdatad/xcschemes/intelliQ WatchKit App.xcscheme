@@ -17,7 +17,7 @@
                BlueprintIdentifier = "28938BE51B2CF3EA0032E598"
                BuildableName = "intelliQ WatchKit App.app"
                BlueprintName = "intelliQ WatchKit App"
-               ReferencedContainer = "container:intelliQ.xcodeproj">
+               ReferencedContainer = "container:IntelliQ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "28938BD81B2CF3EA0032E598"
                BuildableName = "intelliQ WatchKit Extension.appex"
                BlueprintName = "intelliQ WatchKit Extension"
-               ReferencedContainer = "container:intelliQ.xcodeproj">
+               ReferencedContainer = "container:IntelliQ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28938BA31B2B6B560032E598"
-               BuildableName = "intelliQ.app"
-               BlueprintName = "intelliQ"
-               ReferencedContainer = "container:intelliQ.xcodeproj">
+               BuildableName = "IntelliQ.app"
+               BlueprintName = "IntelliQ"
+               ReferencedContainer = "container:IntelliQ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -63,7 +63,7 @@
             BlueprintIdentifier = "28938BE51B2CF3EA0032E598"
             BuildableName = "intelliQ WatchKit App.app"
             BlueprintName = "intelliQ WatchKit App"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "28938BE51B2CF3EA0032E598"
             BuildableName = "intelliQ WatchKit App.app"
             BlueprintName = "intelliQ WatchKit App"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
@@ -94,7 +94,7 @@
             BlueprintIdentifier = "28938BE51B2CF3EA0032E598"
             BuildableName = "intelliQ WatchKit App.app"
             BlueprintName = "intelliQ WatchKit App"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -115,7 +115,7 @@
             BlueprintIdentifier = "28938BE51B2CF3EA0032E598"
             BuildableName = "intelliQ WatchKit App.app"
             BlueprintName = "intelliQ WatchKit App"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
@@ -124,7 +124,7 @@
             BlueprintIdentifier = "28938BE51B2CF3EA0032E598"
             BuildableName = "intelliQ WatchKit App.app"
             BlueprintName = "intelliQ WatchKit App"
-            ReferencedContainer = "container:intelliQ.xcodeproj">
+            ReferencedContainer = "container:IntelliQ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

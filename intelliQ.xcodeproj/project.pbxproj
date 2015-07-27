@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		287E89781B3F36ED006C74E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E89771B3F36ED006C74E4 /* SettingsViewController.swift */; };
+		2886B4501B6243F300D0998E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2886B4521B6243F300D0998E /* Localizable.strings */; };
 		28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BA91B2B6B560032E598 /* AppDelegate.swift */; };
 		28938BAC1B2B6B560032E598 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BAB1B2B6B560032E598 /* QViewController.swift */; };
 		28938BAF1B2B6B560032E598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28938BAD1B2B6B560032E598 /* Main.storyboard */; };
@@ -33,8 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280EF9451B6246E200ACDB07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		287E89771B3F36ED006C74E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		28938BA41B2B6B560032E598 /* intelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2886B44F1B623D4900D0998E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		2886B4531B6243FC00D0998E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		28938BA41B2B6B560032E598 /* IntelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28938BA81B2B6B560032E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28938BA91B2B6B560032E598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28938BAB1B2B6B560032E598 /* QViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +86,7 @@
 		28938BA51B2B6B560032E598 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28938BA41B2B6B560032E598 /* intelliQ.app */,
+				28938BA41B2B6B560032E598 /* IntelliQ.app */,
 				28938BB91B2B6B560032E598 /* intelliQTests.xctest */,
 			);
 			name = Products;
@@ -104,6 +108,7 @@
 				28938BD11B2C88730032E598 /* InQueueViewController.swift */,
 				28938BD31B2CC1D40032E598 /* Ticket.swift */,
 				287E89771B3F36ED006C74E4 /* SettingsViewController.swift */,
+				2886B4521B6243F300D0998E /* Localizable.strings */,
 			);
 			path = intelliQ;
 			sourceTree = "<group>";
@@ -136,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28938BA31B2B6B560032E598 /* intelliQ */ = {
+		28938BA31B2B6B560032E598 /* IntelliQ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28938BC31B2B6B560032E598 /* Build configuration list for PBXNativeTarget "intelliQ" */;
+			buildConfigurationList = 28938BC31B2B6B560032E598 /* Build configuration list for PBXNativeTarget "IntelliQ" */;
 			buildPhases = (
 				28938BA01B2B6B560032E598 /* Sources */,
 				28938BA11B2B6B560032E598 /* Frameworks */,
@@ -148,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = intelliQ;
+			name = IntelliQ;
 			productName = intelliQ;
-			productReference = 28938BA41B2B6B560032E598 /* intelliQ.app */;
+			productReference = 28938BA41B2B6B560032E598 /* IntelliQ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		28938BB81B2B6B560032E598 /* intelliQTests */ = {
@@ -195,20 +200,21 @@
 					};
 				};
 			};
-			buildConfigurationList = 28938B9F1B2B6B560032E598 /* Build configuration list for PBXProject "intelliQ" */;
+			buildConfigurationList = 28938B9F1B2B6B560032E598 /* Build configuration list for PBXProject "IntelliQ" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 28938B9B1B2B6B560032E598;
 			productRefGroup = 28938BA51B2B6B560032E598 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28938BA31B2B6B560032E598 /* intelliQ */,
+				28938BA31B2B6B560032E598 /* IntelliQ */,
 				28938BB81B2B6B560032E598 /* intelliQTests */,
 			);
 		};
@@ -220,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28938BAF1B2B6B560032E598 /* Main.storyboard in Resources */,
+				2886B4501B6243F300D0998E /* Localizable.strings in Resources */,
 				28938BB41B2B6B560032E598 /* LaunchScreen.xib in Resources */,
 				28938BB11B2B6B560032E598 /* Images.xcassets in Resources */,
 			);
@@ -264,16 +271,26 @@
 /* Begin PBXTargetDependency section */
 		28938BBB1B2B6B560032E598 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28938BA31B2B6B560032E598 /* intelliQ */;
+			target = 28938BA31B2B6B560032E598 /* IntelliQ */;
 			targetProxy = 28938BBA1B2B6B560032E598 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2886B4521B6243F300D0998E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2886B4531B6243FC00D0998E /* de */,
+				280EF9451B6246E200ACDB07 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		28938BAD1B2B6B560032E598 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				28938BAE1B2B6B560032E598 /* Base */,
+				2886B44F1B623D4900D0998E /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -435,7 +452,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28938B9F1B2B6B560032E598 /* Build configuration list for PBXProject "intelliQ" */ = {
+		28938B9F1B2B6B560032E598 /* Build configuration list for PBXProject "IntelliQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28938BC11B2B6B560032E598 /* Debug */,
@@ -444,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28938BC31B2B6B560032E598 /* Build configuration list for PBXNativeTarget "intelliQ" */ = {
+		28938BC31B2B6B560032E598 /* Build configuration list for PBXNativeTarget "IntelliQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28938BC41B2B6B560032E598 /* Debug */,

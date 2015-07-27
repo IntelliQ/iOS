@@ -31,6 +31,8 @@ class CompanyTableViewCell: UITableViewCell {
     func updateCell(){
         companyName.text = company!.name!
         peopleWaiting.text = String(company!.waiting!)
+        peopleWaiting.sizeToFit()
+        
         
         var imageUrl:NSURL?
         
@@ -50,5 +52,7 @@ class CompanyTableViewCell: UITableViewCell {
                 })
             })
         }
+        
+        
     }
 }

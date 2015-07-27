@@ -37,7 +37,7 @@ class InQueueViewController: UIViewController {
         // Do any additional setup after loading the view.
         var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         myBackButton.addTarget(self, action: "returnToList:", forControlEvents: UIControlEvents.TouchUpInside)
-        myBackButton.setTitle("Back", forState: UIControlState.Normal)
+        myBackButton.setTitle("＜ " + "back".localized, forState: UIControlState.Normal)
         myBackButton.sizeToFit()
         var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
         self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
@@ -98,14 +98,14 @@ class InQueueViewController: UIViewController {
     func notifyUser(){
         var localNotification: UILocalNotification = UILocalNotification()
         localNotification.alertAction = "\(companyName!)"
-        localNotification.alertBody = "It's your turn"
+        localNotification.alertBody = "your_turn".localized
         localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     
     func waitingFinished(){
         notifyUser()
-        var alert = UIAlertController(title: "\(companyName!)", message: "Its your turn", preferredStyle: UIAlertControllerStyle.Alert)
+        var alert = UIAlertController(title: "\(companyName!)", message: "your_turn".localized, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { action in
             self.returnToList(UIBarButtonItem())
         }))
@@ -119,7 +119,6 @@ class InQueueViewController: UIViewController {
             defaults.setObject(newQueues, forKey: "queues")
         }
         
-        qProvider.cancelWaiting(waitingId!)
         updateTimer!.invalidate()
     }
     
@@ -155,5 +154,11 @@ class InQueueViewController: UIViewController {
             var queues:[String:String] = [companyId!: waitingId!]
             defaults.setObject(queues, forKey: "queues")
         }
+    }
+}
+
+extension String {
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "")
     }
 }
