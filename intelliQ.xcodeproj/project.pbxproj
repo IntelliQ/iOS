@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281D2B8E1BED0AD800C48F4C /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2B8D1BED0AD800C48F4C /* Business.swift */; };
+		281D2B901BED0D5A00C48F4C /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2B8F1BED0D5A00C48F4C /* BusinessTableViewCell.swift */; };
+		281D2B921BED0DBA00C48F4C /* QueueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2B911BED0DBA00C48F4C /* QueueTableViewCell.swift */; };
+		2832C7461BE6A69000089FF2 /* QueueListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832C7451BE6A69000089FF2 /* QueueListController.swift */; };
+		28656E0B1BEAB98900B493F6 /* QueueBusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28656E0A1BEAB98900B493F6 /* QueueBusinessTableViewCell.swift */; };
+		286FA6531C0DD47A00F172C2 /* TabSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FA6521C0DD47A00F172C2 /* TabSegmentedControl.swift */; };
+		286FA6571C0F1FF600F172C2 /* QueueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FA6561C0F1FF600F172C2 /* QueueDetailViewController.swift */; };
 		287E89781B3F36ED006C74E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E89771B3F36ED006C74E4 /* SettingsViewController.swift */; };
 		2886B4501B6243F300D0998E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2886B4521B6243F300D0998E /* Localizable.strings */; };
 		28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BA91B2B6B560032E598 /* AppDelegate.swift */; };
@@ -21,6 +28,13 @@
 		28938BD01B2C72FB0032E598 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */; };
 		28938BD21B2C88730032E598 /* InQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BD11B2C88730032E598 /* InQueueViewController.swift */; };
 		28938BD41B2CC1D40032E598 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28938BD31B2CC1D40032E598 /* Ticket.swift */; };
+		28A133271BEA5F3F00A3795C /* intelliqProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A133261BEA5F3F00A3795C /* intelliqProvider.swift */; };
+		28A133291BEA67B100A3795C /* BusinessQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A133281BEA67B100A3795C /* BusinessQueue.swift */; };
+		28A2E9971C1777D80086EBAB /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A2E9961C1777D80086EBAB /* FaceView.swift */; };
+		28A99B6F1C160C1B00F699C5 /* CircularSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A99B6E1C160C1B00F699C5 /* CircularSliderView.swift */; };
+		28A99B711C160C3800F699C5 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A99B701C160C3800F699C5 /* CircularSlider.swift */; };
+		28EC6D741C062CA0001054F9 /* imageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC6D731C062CA0001054F9 /* imageProvider.swift */; };
+		BAED627FD28171B6C1C3082D /* Pods_IntelliQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C60AB18B940B992E9E3202D /* Pods_IntelliQ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5305B94DAB3295FEA310B1 /* Pods-IntelliQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliQ/Pods-IntelliQ.release.xcconfig"; sourceTree = "<group>"; };
 		280EF9451B6246E200ACDB07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		281D2B8D1BED0AD800C48F4C /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		281D2B8F1BED0D5A00C48F4C /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
+		281D2B911BED0DBA00C48F4C /* QueueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTableViewCell.swift; sourceTree = "<group>"; };
+		2832C7451BE6A69000089FF2 /* QueueListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueListController.swift; sourceTree = "<group>"; };
+		28656E0A1BEAB98900B493F6 /* QueueBusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueBusinessTableViewCell.swift; sourceTree = "<group>"; };
+		286FA6521C0DD47A00F172C2 /* TabSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSegmentedControl.swift; sourceTree = "<group>"; };
+		286FA6561C0F1FF600F172C2 /* QueueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueDetailViewController.swift; sourceTree = "<group>"; };
 		287E89771B3F36ED006C74E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28804BB51C00E27900D6302B /* pod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pod-Bridging-Header.h"; sourceTree = "<group>"; };
 		2886B44F1B623D4900D0998E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2886B4531B6243FC00D0998E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28938BA41B2B6B560032E598 /* IntelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +77,14 @@
 		28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		28938BD11B2C88730032E598 /* InQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InQueueViewController.swift; sourceTree = "<group>"; };
 		28938BD31B2CC1D40032E598 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		28A133261BEA5F3F00A3795C /* intelliqProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = intelliqProvider.swift; sourceTree = "<group>"; };
+		28A133281BEA67B100A3795C /* BusinessQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessQueue.swift; sourceTree = "<group>"; };
+		28A2E9961C1777D80086EBAB /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		28A99B6E1C160C1B00F699C5 /* CircularSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSliderView.swift; sourceTree = "<group>"; };
+		28A99B701C160C3800F699C5 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		28EC6D731C062CA0001054F9 /* imageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageProvider.swift; sourceTree = "<group>"; };
+		38E38506D869BC17619B53E5 /* Pods-IntelliQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliQ/Pods-IntelliQ.debug.xcconfig"; sourceTree = "<group>"; };
+		5C60AB18B940B992E9E3202D /* Pods_IntelliQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAED627FD28171B6C1C3082D /* Pods_IntelliQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +106,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281D2B8A1BED0A7100C48F4C /* Queuelist */ = {
+			isa = PBXGroup;
+			children = (
+				28656E0A1BEAB98900B493F6 /* QueueBusinessTableViewCell.swift */,
+				2832C7451BE6A69000089FF2 /* QueueListController.swift */,
+				281D2B8F1BED0D5A00C48F4C /* BusinessTableViewCell.swift */,
+				281D2B911BED0DBA00C48F4C /* QueueTableViewCell.swift */,
+			);
+			name = Queuelist;
+			sourceTree = "<group>";
+		};
+		281D2B8B1BED0A9200C48F4C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				28938BC91B2C651D0032E598 /* http.swift */,
+				28A133261BEA5F3F00A3795C /* intelliqProvider.swift */,
+				28EC6D731C062CA0001054F9 /* imageProvider.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		281D2B8C1BED0AAB00C48F4C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				28A133281BEA67B100A3795C /* BusinessQueue.swift */,
+				281D2B8D1BED0AD800C48F4C /* Business.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		2832C7441BE69D9C00089FF2 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				28938BAB1B2B6B560032E598 /* QViewController.swift */,
+				28938BCB1B2C6AD50032E598 /* QProvider.swift */,
+				28938BCD1B2C6D370032E598 /* company.swift */,
+				28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */,
+				28938BD11B2C88730032E598 /* InQueueViewController.swift */,
+				28938BD31B2CC1D40032E598 /* Ticket.swift */,
+				287E89771B3F36ED006C74E4 /* SettingsViewController.swift */,
+			);
+			name = old;
+			sourceTree = "<group>";
+		};
+		286FA6541C0DD47F00F172C2 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				286FA6521C0DD47A00F172C2 /* TabSegmentedControl.swift */,
+			);
+			name = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		286FA6551C0F1FC900F172C2 /* QueueDetail */ = {
+			isa = PBXGroup;
+			children = (
+				286FA6561C0F1FF600F172C2 /* QueueDetailViewController.swift */,
+			);
+			name = QueueDetail;
+			sourceTree = "<group>";
+		};
 		28938B9B1B2B6B560032E598 = {
 			isa = PBXGroup;
 			children = (
 				28938BA61B2B6B560032E598 /* intelliQ */,
 				28938BBC1B2B6B560032E598 /* intelliQTests */,
 				28938BA51B2B6B560032E598 /* Products */,
+				5588EC7EC8FB019CE849714F /* Pods */,
+				9F185F9FF4E68290DD75E711 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,20 +189,18 @@
 		28938BA61B2B6B560032E598 /* intelliQ */ = {
 			isa = PBXGroup;
 			children = (
-				28938BC91B2C651D0032E598 /* http.swift */,
+				28A99B6D1C160A7500F699C5 /* customControls */,
+				286FA6551C0F1FC900F172C2 /* QueueDetail */,
+				281D2B8C1BED0AAB00C48F4C /* Data */,
+				281D2B8B1BED0A9200C48F4C /* Helper */,
+				281D2B8A1BED0A7100C48F4C /* Queuelist */,
 				28938BA91B2B6B560032E598 /* AppDelegate.swift */,
-				28938BAB1B2B6B560032E598 /* QViewController.swift */,
 				28938BAD1B2B6B560032E598 /* Main.storyboard */,
 				28938BB01B2B6B560032E598 /* Images.xcassets */,
-				28938BB21B2B6B560032E598 /* LaunchScreen.xib */,
 				28938BA71B2B6B560032E598 /* Supporting Files */,
-				28938BCB1B2C6AD50032E598 /* QProvider.swift */,
-				28938BCD1B2C6D370032E598 /* company.swift */,
-				28938BCF1B2C72FB0032E598 /* CompanyTableViewCell.swift */,
-				28938BD11B2C88730032E598 /* InQueueViewController.swift */,
-				28938BD31B2CC1D40032E598 /* Ticket.swift */,
-				287E89771B3F36ED006C74E4 /* SettingsViewController.swift */,
 				2886B4521B6243F300D0998E /* Localizable.strings */,
+				28804BB51C00E27900D6302B /* pod-Bridging-Header.h */,
+				286FA6541C0DD47F00F172C2 /* Custom Controls */,
 			);
 			path = intelliQ;
 			sourceTree = "<group>";
@@ -116,6 +208,8 @@
 		28938BA71B2B6B560032E598 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2832C7441BE69D9C00089FF2 /* old */,
+				28938BB21B2B6B560032E598 /* LaunchScreen.xib */,
 				28938BA81B2B6B560032E598 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -138,6 +232,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		28A99B6D1C160A7500F699C5 /* customControls */ = {
+			isa = PBXGroup;
+			children = (
+				28A99B6E1C160C1B00F699C5 /* CircularSliderView.swift */,
+				28A99B701C160C3800F699C5 /* CircularSlider.swift */,
+				28A2E9961C1777D80086EBAB /* FaceView.swift */,
+			);
+			name = customControls;
+			sourceTree = "<group>";
+		};
+		5588EC7EC8FB019CE849714F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38E38506D869BC17619B53E5 /* Pods-IntelliQ.debug.xcconfig */,
+				1F5305B94DAB3295FEA310B1 /* Pods-IntelliQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F185F9FF4E68290DD75E711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C60AB18B940B992E9E3202D /* Pods_IntelliQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28938BC31B2B6B560032E598 /* Build configuration list for PBXNativeTarget "IntelliQ" */;
 			buildPhases = (
+				D6BEDE08BE94A622D3A22FCF /* Check Pods Manifest.lock */,
 				28938BA01B2B6B560032E598 /* Sources */,
 				28938BA11B2B6B560032E598 /* Frameworks */,
 				28938BA21B2B6B560032E598 /* Resources */,
+				C7281E597B138F52227653EA /* Embed Pods Frameworks */,
+				E988B039AAD146379A3CFC72 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,7 +306,9 @@
 		28938B9C1B2B6B560032E598 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Markus Petrykowski";
 				TargetAttributes = {
 					28938BA31B2B6B560032E598 = {
@@ -241,20 +367,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C7281E597B138F52227653EA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliQ/Pods-IntelliQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6BEDE08BE94A622D3A22FCF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E988B039AAD146379A3CFC72 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliQ/Pods-IntelliQ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28938BA01B2B6B560032E598 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2832C7461BE6A69000089FF2 /* QueueListController.swift in Sources */,
+				281D2B8E1BED0AD800C48F4C /* Business.swift in Sources */,
+				286FA6531C0DD47A00F172C2 /* TabSegmentedControl.swift in Sources */,
 				28938BD21B2C88730032E598 /* InQueueViewController.swift in Sources */,
 				28938BAC1B2B6B560032E598 /* QViewController.swift in Sources */,
+				28A99B711C160C3800F699C5 /* CircularSlider.swift in Sources */,
 				28938BD01B2C72FB0032E598 /* CompanyTableViewCell.swift in Sources */,
+				281D2B901BED0D5A00C48F4C /* BusinessTableViewCell.swift in Sources */,
 				28938BD41B2CC1D40032E598 /* Ticket.swift in Sources */,
+				28A2E9971C1777D80086EBAB /* FaceView.swift in Sources */,
+				28656E0B1BEAB98900B493F6 /* QueueBusinessTableViewCell.swift in Sources */,
 				28938BAA1B2B6B560032E598 /* AppDelegate.swift in Sources */,
+				28A99B6F1C160C1B00F699C5 /* CircularSliderView.swift in Sources */,
+				28A133271BEA5F3F00A3795C /* intelliqProvider.swift in Sources */,
 				28938BCC1B2C6AD50032E598 /* QProvider.swift in Sources */,
+				281D2B921BED0DBA00C48F4C /* QueueTableViewCell.swift in Sources */,
 				28938BCA1B2C651D0032E598 /* http.swift in Sources */,
+				28EC6D741C062CA0001054F9 /* imageProvider.swift in Sources */,
 				28938BCE1B2C6D370032E598 /* company.swift in Sources */,
+				286FA6571C0F1FF600F172C2 /* QueueDetailViewController.swift in Sources */,
 				287E89781B3F36ED006C74E4 /* SettingsViewController.swift in Sources */,
+				28A133291BEA67B100A3795C /* BusinessQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +514,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -381,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,27 +579,39 @@
 		};
 		28938BC41B2B6B560032E598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E38506D869BC17619B53E5 /* Pods-IntelliQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = intelliQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.$(PRODUCT_NAME:rfc1034identifier).app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IntelliQ/pod-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		28938BC51B2B6B560032E598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5305B94DAB3295FEA310B1 /* Pods-IntelliQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = intelliQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.$(PRODUCT_NAME:rfc1034identifier).app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IntelliQ/pod-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
@@ -429,6 +629,7 @@
 				);
 				INFOPLIST_FILE = intelliQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.intelliq.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/intelliQ.app/intelliQ";
 			};
@@ -444,6 +645,7 @@
 				);
 				INFOPLIST_FILE = intelliQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.intelliq.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/intelliQ.app/intelliQ";
 			};

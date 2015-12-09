@@ -23,13 +23,13 @@ class Http {
         func convertDictToString(dict: [String:Any]) -> String{
             var result = ""
             for (key, value) in dict {
-                if let valueString = value as? [ [String:String]] {
+                if let _ = value as? [ [String:String]] {
                     //value is simple dict Array
-                }else if let valueString = value as? [ [String:Any]]{
+                }else if let _ = value as? [ [String:Any]]{
                     //value is complex dict array
-                }else if let valueString = value as? [String:Any]{
+                }else if let _ = value as? [String:Any]{
                     //value is complex dictionary
-                }else if let valueString = value as? [String: String]{
+                }else if let _ = value as? [String: String]{
                     //value is simple dictionary
                 }else if NSJSONSerialization.isArray(value as? AnyObject){
                     var firstItem = true
@@ -58,18 +58,19 @@ class Http {
         }
         
         var err: NSError?
-        var request = NSMutableURLRequest(URL: NSURL(string: "\(url)?\(convertDictToString(params))")!)
+        let request = NSMutableURLRequest(URL: NSURL(string: "\(url)?\(convertDictToString(params))")!)
         request.HTTPMethod = "GET"
         
-        println("GET: \(url)?\(convertDictToString(params))")
+        print("GET: \(url)?\(convertDictToString(params))")
         
-        var task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+        let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
 //            var result = NSString(data: data, encoding: NSASCIIStringEncoding)! as String
+            
             if let httpResponse = response as? NSHTTPURLResponse {
                 if httpResponse.statusCode == 401 {
                     Http.login({ () -> Void in Http.get(url, params: params, callback: callback) })
                 }else {
-                    callback(data)
+                    callback(data!)
                 }
             }
         }
@@ -78,7 +79,7 @@ class Http {
 
     static func post(url:String, params:[String:Any] = [:], callback: (NSData) -> Void) -> Void {
         
-        var request = NSMutableURLRequest(URL: NSURL(string: url)!)
+        let request = NSMutableURLRequest(URL: NSURL(string: url)!)
         var err: NSError?
         
         request.HTTPMethod = "POST"
@@ -86,13 +87,13 @@ class Http {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
-        var task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+        let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
 //            var result = NSString(data: data, encoding: NSASCIIStringEncoding)! as String
             if let httpResponse = response as? NSHTTPURLResponse {
                 if httpResponse.statusCode == 401 {
                     Http.login { () -> Void in Http.post(url, params: params, callback: callback) }
                 }else{
-                    callback(data)
+                    callback(data!)
                 }
             }
         }
@@ -100,8 +101,8 @@ class Http {
     }
     
     static func put(url:String, params:[String:Any] = [:], callback: (String) -> Void) -> Void {
-        println()
-        var request = NSMutableURLRequest(URL: NSURL(string: url)!)
+        print("")
+        let request = NSMutableURLRequest(URL: NSURL(string: url)!)
         var err: NSError?
         
         request.HTTPMethod = "PUT"
@@ -109,10 +110,10 @@ class Http {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
-        println("PUT: \(url)")
+        print("PUT: \(url)")
         
-        var task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
-            var result = NSString(data: data, encoding: NSASCIIStringEncoding)! as String
+        let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+            let result = NSString(data: data!, encoding: NSASCIIStringEncoding)! as String
             if let httpResponse = response as? NSHTTPURLResponse {
                 if httpResponse.statusCode == 401 {
                     Http.login { () -> Void in Http.put(url, params: params, callback: callback) }
@@ -132,13 +133,13 @@ class Http {
         func convertDictToString(dict: [String:Any]) -> String{
             var result = ""
             for (key, value) in dict {
-                if let valueString = value as? [ [String:String]] {
+                if let _ = value as? [ [String:String]] {
                     //value is simple dict Array
-                }else if let valueString = value as? [ [String:Any]]{
+                }else if let _ = value as? [ [String:Any]]{
                     //value is complex dict array
-                }else if let valueString = value as? [String:Any]{
+                }else if let _ = value as? [String:Any]{
                     //value is complex dictionary
-                }else if let valueString = value as? [String: String]{
+                }else if let _ = value as? [String: String]{
                     //value is simple dictionary
                 }else if NSJSONSerialization.isArray(value as? AnyObject){
                     var firstItem = true
@@ -166,14 +167,14 @@ class Http {
             return result
         }
 
-        var request = NSMutableURLRequest(URL: NSURL(string: "\(url)?\(convertDictToString(params))")!)
+        let request = NSMutableURLRequest(URL: NSURL(string: "\(url)?\(convertDictToString(params))")!)
         
         request.HTTPMethod = "DELETE"
         
-        println("DELETE: \(url)")
+        print("DELETE: \(url)")
         
-        var task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
-            var result = NSString(data: data, encoding: NSASCIIStringEncoding)! as String
+        let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+            let result = NSString(data: data!, encoding: NSASCIIStringEncoding)! as String
             if let httpResponse = response as? NSHTTPURLResponse {
                 if httpResponse.statusCode == 401 {
                     Http.login { () -> Void in Http.put(url, params: params, callback: callback) }
@@ -189,7 +190,7 @@ class Http {
 extension NSJSONSerialization{
 
     static func JSONObjectToData(dict:[String:Any]) -> NSData?{
-        var jsonString = dictToString(dict)
+        let jsonString = dictToString(dict)
         
         return (jsonString as NSString).dataUsingEncoding(NSUTF8StringEncoding)
     }
@@ -261,7 +262,7 @@ extension NSJSONSerialization{
     }
 
     static func isDict(obj: AnyObject?) -> Bool {
-        if let o = obj as? [String:AnyObject] {
+        if let _ = obj as? [String:AnyObject] {
             return true
         } else {
             return false
@@ -285,21 +286,21 @@ extension NSJSONSerialization{
     }
     
     static func isArray(obj: AnyObject?) -> Bool {
-        if let o = obj as? [AnyObject]{ return true } else
-            if let o = obj as? [String]{ return true } else
-                if let o = obj as? [Int]{ return true } else
-                    if let o = obj as? [Double]{ return true } else
-                    if let o = obj as? [Any]{ return true } else
-                        if let o = obj as? [ [String:AnyObject] ]{ return true } else
-                            if let o = obj as? [ [String:Any] ]{ return true } else
-                                if let o = obj as? [ [String:String] ]{ return true } else
-                                    if let o = obj as? [ [String:Int] ]{ return true } else
-                                        if let o = obj as? [ [String:Double] ]{ return true } else
-                                            if let o = obj as? [ [AnyObject] ]{ return true } else
-                                                if let o = obj as? [ [Any] ]{ return true } else
-                                                    if let o = obj as? [ [Int] ]{ return true } else
-                                                        if let o = obj as? [ [Double] ]{ return true } else
-                                                            if let o = obj as? [ [String] ]{ return true } else
+        if let _ = obj as? [AnyObject]{ return true } else
+            if let _ = obj as? [String]{ return true } else
+                if let _ = obj as? [Int]{ return true } else
+                    if let _ = obj as? [Double]{ return true } else
+                    if let _ = obj as? [Any]{ return true } else
+                        if let _ = obj as? [ [String:AnyObject] ]{ return true } else
+                            if let _ = obj as? [ [String:Any] ]{ return true } else
+                                if let _ = obj as? [ [String:String] ]{ return true } else
+                                    if let _ = obj as? [ [String:Int] ]{ return true } else
+                                        if let _ = obj as? [ [String:Double] ]{ return true } else
+                                            if let _ = obj as? [ [AnyObject] ]{ return true } else
+                                                if let _ = obj as? [ [Any] ]{ return true } else
+                                                    if let _ = obj as? [ [Int] ]{ return true } else
+                                                        if let _ = obj as? [ [Double] ]{ return true } else
+                                                            if let _ = obj as? [ [String] ]{ return true } else
                                                             {return false}
     }
     

@@ -17,14 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        var navigationBarAppearence = UINavigationBar.appearance()
-        navigationBarAppearence.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        let navigationBarAppearence = UINavigationBar.appearance()
+        navigationBarAppearence.tintColor = UIColor(red: 253/255, green: 68/255, blue: 130/255, alpha: 1)
         navigationBarAppearence.barTintColor = UIColor(red: 103/255, green: 58/255, blue: 183/255, alpha: 1)
         
         navigationBarAppearence.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
-            UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Sound, UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: nil))
         
         
         return true
