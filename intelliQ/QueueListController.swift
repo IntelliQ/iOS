@@ -19,17 +19,20 @@ class QueueListController: UIViewController, UITableViewDelegate, UITableViewDat
     var queueList:[Business] = []
     var height = CGFloat(0)
     var selectedBusiness:Business?
+    var selectedQueueIndex:Int?
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destViewController = segue.destinationViewController as? QueueDetailViewController {
             destViewController.business = selectedBusiness
+            destViewController.queueIndex = selectedQueueIndex
         }
         
     }
     
     
-    func openQueue(business:Business){
+    func openQueue(business:Business, queueIndex: Int){
         selectedBusiness = business
+        selectedQueueIndex = queueIndex
         self.performSegueWithIdentifier("openQueue", sender: self)
     }
     
@@ -56,6 +59,10 @@ class QueueListController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.tableView.reloadData()
             })
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        print(queueList)
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -69,9 +69,17 @@ class QueueProvider{
                             
                             let businessEntry = Business()
                             
-                            businessEntry.name = business["name"] as! String
+//                            businessEntry.name = business["name"] as! String
+                            
+                            if let name = business["name"] as? String {
+                                businessEntry.name = name
+                            }
 //                            businessEntry.email = business["email"] as! String
-                            businessEntry.logoImageKey = business["logoImageKeyId"] as! Int
+//                            businessEntry.logoImageKey = business["logoImageKeyId"] as! Int
+                            
+                            if let imageKey = business["logoImageKeyId"] as? Int {
+                                businessEntry.logoImageKey = imageKey
+                            }
                             
                             if let queues = business["queues"] as? [ [String: AnyObject] ]{
                                 

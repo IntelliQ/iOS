@@ -16,6 +16,7 @@ class QueueDetailViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     
     var business:Business?
+    var queueIndex:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class QueueDetailViewController: UIViewController {
     func updateUI(){
         let screenWidth = Int(UIScreen.mainScreen().bounds.size.width)+10
         
-        ImageProvider.getImage((business?.queues[0].imageId)!, size: screenWidth ){
+        ImageProvider.getImage((business?.queues[queueIndex!].imageId)!, size: screenWidth ){
             image in
             self.titleImage.image = image
         }
@@ -42,11 +43,12 @@ class QueueDetailViewController: UIViewController {
             self.logoImage.image = image
         }
         
-        queueName.text = business?.queues[0].name
+        queueName.text = business?.queues[queueIndex!].name
     }
 
     @IBAction func closeQueue(sender: AnyObject) {
-        print("close")
-        self.navigationController?.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: {
+            print(self.business?.name)
+        })
     }
 }

@@ -82,9 +82,7 @@ class BusinessTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let singleQueueBusiness = business
-        singleQueueBusiness?.queues = [(business?.queues[indexPath.row])!]
-        rootViewController?.openQueue(singleQueueBusiness!)
+        rootViewController?.openQueue(business!, queueIndex: indexPath.row)
     }
     
     func getSelectedQueue() -> Business{

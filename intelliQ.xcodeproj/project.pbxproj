@@ -58,7 +58,6 @@
 		286FA6521C0DD47A00F172C2 /* TabSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSegmentedControl.swift; sourceTree = "<group>"; };
 		286FA6561C0F1FF600F172C2 /* QueueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueDetailViewController.swift; sourceTree = "<group>"; };
 		287E89771B3F36ED006C74E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		28804BB51C00E27900D6302B /* pod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pod-Bridging-Header.h"; sourceTree = "<group>"; };
 		2886B44F1B623D4900D0998E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2886B4531B6243FC00D0998E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28938BA41B2B6B560032E598 /* IntelliQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,7 +198,6 @@
 				28938BB01B2B6B560032E598 /* Images.xcassets */,
 				28938BA71B2B6B560032E598 /* Supporting Files */,
 				2886B4521B6243F300D0998E /* Localizable.strings */,
-				28804BB51C00E27900D6302B /* pod-Bridging-Header.h */,
 				286FA6541C0DD47F00F172C2 /* Custom Controls */,
 			);
 			path = intelliQ;
@@ -591,7 +589,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.$(PRODUCT_NAME:rfc1034identifier).app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "IntelliQ/pod-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
@@ -610,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.$(PRODUCT_NAME:rfc1034identifier).app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "IntelliQ/pod-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
@@ -619,10 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -639,10 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = intelliQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.intelliq.$(PRODUCT_NAME:rfc1034identifier)";

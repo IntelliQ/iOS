@@ -57,7 +57,6 @@ class Http {
             return result
         }
         
-        var err: NSError?
         let request = NSMutableURLRequest(URL: NSURL(string: "\(url)?\(convertDictToString(params))")!)
         request.HTTPMethod = "GET"
         
@@ -80,7 +79,6 @@ class Http {
     static func post(url:String, params:[String:Any] = [:], callback: (NSData) -> Void) -> Void {
         
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
-        var err: NSError?
         
         request.HTTPMethod = "POST"
         request.HTTPBody = NSJSONSerialization.JSONObjectToData(params)
@@ -103,7 +101,6 @@ class Http {
     static func put(url:String, params:[String:Any] = [:], callback: (String) -> Void) -> Void {
         print("")
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
-        var err: NSError?
         
         request.HTTPMethod = "PUT"
         request.HTTPBody = NSJSONSerialization.JSONObjectToData(params)

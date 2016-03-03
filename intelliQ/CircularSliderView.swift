@@ -49,14 +49,35 @@ class CircularSliderView: UIView {
         
     }
     
-    var mainCircleRadius: CGFloat {
-        return min(bounds.size.width, bounds.size.height)
+    //Defines the additional Space needed for the time and waiting user
+    var outerPadding:CGFloat {
+        return 30
     }
     
-    override func drawRect(rect: CGRect){
-        let centeringCircle = UIBezierPath(arcCenter: convertPoint(center, fromView: superview), radius: mainCircleRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
-        centeringCircle.lineWidth = CGFloat(5)
-        centeringCircle.stroke()
+    var mainCircleRadius: CGFloat {
+        return min(self.bounds.size.width, self.bounds.size.height) / 2
     }
+    
+    let angleOffset:CGFloat = (CGFloat(2*M_PI)/360)*270
+    override func drawRect(rect: CGRect){
+        
+        let centeringCircle = UIBezierPath(arcCenter: convertPoint(center, fromView: self), radius: mainCircleRadius-8-outerPadding, startAngle: 0, endAngle: (CGFloat(2*M_PI)/360)*360, clockwise: true)
+        centeringCircle.lineWidth = CGFloat(5)
+        firstColor.set()
+        centeringCircle.stroke()
+        
+        let centeringCircle1 = UIBezierPath(arcCenter: convertPoint(center, fromView: self), radius: mainCircleRadius-outerPadding, startAngle: angleOffset, endAngle: (CGFloat(2*M_PI)/360)*90+angleOffset, clockwise: true)
+        centeringCircle1.lineWidth = CGFloat(5)
+        UIColor.blueColor().set()
+        centeringCircle1.stroke()
+        
+        centeringCircle1.currentPoint
+    }
+    
+    
+    func calcPointForAngle(startPoint:CGPoint, radius:CGFloat, angle:CGFloat) -> CGPoint {
+        return startPoint
+    }
+
 
 }
